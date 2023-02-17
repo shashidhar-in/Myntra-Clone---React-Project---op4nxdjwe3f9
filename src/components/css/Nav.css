@@ -1,0 +1,19 @@
+.search-box{
+    max-width: 20rem;
+}
+#search-icon{
+    color: #5c5b5b;
+    width: 2rem;
+}
+.cart-icon{
+    color: #5c5b5b;
+
+}.cart-icon:hover{
+    color: #3e3e3e;
+
+}
+@media all and (max-width: 480px) {
+    .search-box{
+        width: 100vw;
+    }
+}
