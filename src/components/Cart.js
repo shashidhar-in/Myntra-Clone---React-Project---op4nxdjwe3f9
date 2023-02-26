@@ -4,7 +4,7 @@ import { Context } from './Context';
 import {ProductInfo} from './Product';
 import emptyCart from '../res/empty_cart.jpg'
 import { useNavigate } from 'react-router-dom';
-import { Toaster,toast } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 import "./css/Cart.css"
 
 
@@ -45,8 +45,9 @@ const Cart = () => {
 
     
     return (
+        <>
+                    <Toaster/>
         <Modal show={show} fullscreen onHide={() => setShow(false)}>
-            <Toaster containerStyle={{marginTop:"3rem"}}/>
             <Modal.Header closeButton>
                 <Modal.Title>Cart</Modal.Title>
             </Modal.Header>
@@ -55,7 +56,8 @@ const Cart = () => {
                 <CartDisp />
             </Modal.Body>
 
-        </Modal>
+        </Modal>        </>
+
     );
 };
 

@@ -25,15 +25,17 @@ function Product({ product }) {
     }
 
     return (
-       <div id='ProductContainer'>
-        <Toaster/>
+        <>     <Toaster/>
         
+         <div id='ProductContainer'>
+   
          <ProductInfo productX={product}/>
     <div id='add-to-cart' className=' text-center'  ><h5 className='Product' onClick={addTocart}>ADD TO BAG</h5></div>
 
         </div>
-        
+       </> 
     )
+      
 }
 
 function ProductInfo({productX}){
