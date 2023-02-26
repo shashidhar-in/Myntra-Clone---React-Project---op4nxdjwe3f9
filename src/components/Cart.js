@@ -31,7 +31,7 @@ const Cart = () => {
                     <div className='detailsItem d-flex align-items-center justify-content-between'><h5>Total Discount</h5><h6>₹{Discount}</h6></div>
                     <hr id='hDivider'/>
                      <div className='detailsItem d-flex align-items-center justify-content-between'><h5>Final Price</h5><h6>₹{originalPrice-Discount}</h6></div>
-                <button className='w-25' onClick={()=>{toast.success("Thank you for shopping with us")}}>BUY</button>
+                <button className='buy-btn' onClick={()=>{toast.success("Thank you for shopping with us")}}><h5>BUY</h5></button>
             </div>
             </div>
         }
